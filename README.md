@@ -1,2 +1,3 @@
-# coursera-machine-learning
-My solutions of the machine learning course from Coursera
+# Coursera Machine Learning
+
+My solutions of the machine learning course exercises from Coursera
