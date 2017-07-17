@@ -33,21 +33,14 @@ function [J, grad] = costFunction(theta, X, y)
   J = 1/m * sum(sqrts);
 
   
-
+  % Small alpha
   alpha = 0.01;
-  n_iters = 400;
-  J_history = zeros(n_iters, 1);
-
   
+  % Number of iterations
+  n_iters = length(y);
 
-  for i = 1:n_iters
-
-    
-    theta = theta - (alpha .* J);    
-    
-  end
-
-  grad = theta;
+  % Gradient descent  
+  grad = (1/n_iters) * X' * (h - y);
 
 % =============================================================
 
